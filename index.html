@@ -1,0 +1,104 @@
+<!-- este comando mostra para o navegador que é um documento html5 -->
+<!DOCTYPE html>
+
+<!-- tudo que estiver emtre os símbolos maior que e menor que são tags -->
+<!-- com o lang= voce especifica a lingua que esta sendo utilizada -->
+<html lang="pt-br">
+
+<!-- a tag head é onde ficam os metadados
+charsert= é um metadado que especifica o tipo de linguagem a ser utilizada, nesse caso utf-8 especifica caracteries da escrita brasileira (acentos etc)
+tag tittle é a forma como aparecera na aba da pagina
+tag "p" delimita quebra de linha -->    
+    <head>
+        <meta charset="utf-8">
+        <title> Minha página da Jade </title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+<!-- a tag body define o corpo/conteudo do documento/pagina -->
+    <body>
+        <p> Minha primeira página </p>
+        <!-- a tag "nav" serve para criar um menu, a tag "ul" para criar uma lista, tag "li" para um item-->
+        <nav>
+            <ul>
+                <!-- href= e "#" indica um id-->
+                <li>
+                    <a href="#servicos">Serviços</a>
+                </li>
+                <li>
+                    <a href="#clientes">Clientes</a>
+                </li>
+                <li>
+                    <a href="#parceiros">Parceiros</a>
+                </li>
+                <li>
+                    <a href="#time">Time</a></li>
+                <li>
+                    <a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+       
+
+        <!-- a tag header define o cabeçalho da página, a tag h1,h2,h3 definem os tamanhos)--> 
+        <header> 
+            <h1>Página da Jade</h1>
+            <p>Olá mundo!</p>
+        </header>
+
+        <!-- tag "section" cria uma seção dentro da página-->
+        <section id="servicos"> 
+            <h2>Serviços</h2>
+            <p>Oferecemos os melhores serviços em desenvolvimento de sites e apps</p>
+            <!-- tag img insere imagem, "src=" endereço da imagem, "width=" tamanho
+            tag "div" cria uma divisão para cada elemento -->
+            <div>
+                <img src="img/site.jpg" width=500px class="img_padrao"/>
+            </div>
+            <div>
+                <img src="img/app.jpg" width=500px/>
+            </div>
+        </section>
+
+        <section id="clientes"> 
+            <h2>Clientes</h2>
+            <p>Nossos clientes ficaram muito satisfeitos com nosso serviço</p>
+            <div>
+                <img src="img/clients.jpg" width=500px/>
+            </div>
+        </section>
+
+        <section id="parceiros">
+            <h2>Parceiros</h2>
+            <p>Nossos parceiros nos ajudam a entregar as 
+                melhores soluções para nossos clientes</p>
+            <div>
+                <a href="https://cademeucurso.com" target="_blank">
+                    <img src="img/parceiros.jpg" width=500px/></a>
+            </div>
+        </section>
+
+        <section id="time">
+            <h2>Time</h2>
+            <p>Nosso time conta com os profissionais mais engajados do mercado </p>
+            <div>
+                <img src="img/time.jpg" width=500px/>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para mais informações</p>
+            <div>
+                <img src="img/contato.jpg" width=500px/>
+                <p><a href="mailto:">contato@empresa.com</a></p>
+                <p><a href="tel:99999999999">(99) 999999999</a></p>
+            </div>
+        </section>
+
+        <!-- a tag footer define o rodapé da página-->
+        <footer>
+            <p>Desenvolvido por Jade</p>
+        </footer> 
+
+    </body>
+
+</html>
